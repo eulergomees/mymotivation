@@ -6,7 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".UserActivity">
+    tools:context=".ui.UserActivity">
 
-    
+    <TextView
+        android:id="@+id/textview_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Vamos começar?"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:hint="Qual seu nome ?"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/purple_dark"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
 </RelativeLayout>

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <View
         android:id="@+id/view_phrases_menu"
@@ -25,7 +25,7 @@
         android:layout_marginStart="32dp"
         android:contentDescription="All content"
         android:src="@drawable/ic_all"
-        app:tint="@color/white" />
+        app:tint="@color/black" />
 
     <ImageView
         android:id="@+id/imageview_happy"
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="Happy"
         android:src="@drawable/ic_happy"
-        app:tint="@color/white" />
+        app:tint="@color/black" />
 
     <ImageView
         android:id="@+id/imageview_sunny"
@@ -47,8 +47,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
         android:contentDescription="Light mode"
-        android:src="@drawable/ic_sun"
-        app:tint="@color/white" />
+        android:src="@drawable/ic_sunny"
+        app:tint="@color/black" />
 
     <TextView
         android:id="@+id/textview_name"
@@ -57,7 +57,6 @@
         android:layout_below="@+id/view_phrases_menu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Olá, Kotlin!"
         android:textSize="20sp" />
 
     <TextView
@@ -88,7 +87,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:textSize="20sp"
         android:backgroundTint="@color/purple"
-        android:text="Nova Frase" />
+        android:text="Nova Frase"
+        android:textColor="@color/white"/>
 
 </RelativeLayout>
