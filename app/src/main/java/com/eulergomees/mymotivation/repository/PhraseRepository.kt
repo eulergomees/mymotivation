@@ -1,6 +1,7 @@
 package com.eulergomees.mymotivation.repository
 
 import com.eulergomees.mymotivation.helper.MotivationConstants
+import kotlin.random.Random
 
 data class Phrase(
     val description: String,
@@ -28,7 +29,10 @@ class PhraseRepository {
         Phrase("Riscos devem ser corridos, porque o maior perigo é não arriscar nada!", sunny)
     )
 
-    fun getPhrase(filter: Int):String{
-        
+    fun getPhrase(filter: Int): String {
+        val filtered = listPhrases.filter { it.category == filter || filter == all }
+        val rand = Random.nextInt(filtered.size)
+        return filtered[rand].description
+
     }
 }
