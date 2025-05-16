@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="button_new_phrase">New phrase</string>
+    <string name="button_save">Save</string>
+    <string name="hint_your_name">Whats your name ?</string>
+    <string name="label_user">User</string>
+    <string name="label_phrase">Phrase</string>
+    <string name="label_lets_begin">Let\'s start ?</string>
+    <string name="label_phrases_all">All Phrases</string>
+    <string name="label_phrases_motivation">Motivation phrases</string>
+    <string name="label_phrases_morning">Morning phrases</string>
+    <string name="label_greeting_user">Hello, %1$s!</string>
+    <string name="error_mandatory_name">Enter your name</string>
+</resources>

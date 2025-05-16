@@ -12,6 +12,7 @@ import com.eulergomees.mymotivation.repository.PhraseRepository
 import com.eulergomees.mymotivation.R
 import com.eulergomees.mymotivation.databinding.ActivityMainBinding
 import com.eulergomees.mymotivation.repository.SecurityPreferences
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -79,13 +80,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun refreshPhrase() {
-        binding.textviewPhrase.text = phraseRepository.getPhrase(filter)
+        binding.textviewPhrase.text = phraseRepository.getPhrase(filter, Locale.getDefault().language)
     }
 
 
     private fun getUserName() {
         val name = securityPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
-        binding.textviewName.text = "Olá, $name!"
+        binding.textviewName.text = getString(R.string.label_greeting_user, name)
     }
 
 

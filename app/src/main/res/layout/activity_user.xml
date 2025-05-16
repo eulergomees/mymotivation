@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Vamos começar?"
+        android:text="@string/label_lets_begin"
         android:textColor="@color/white"
         android:textSize="38sp" />
 
@@ -25,7 +25,7 @@
         android:layout_centerInParent="true"
         android:layout_margin="32dp"
         android:gravity="center"
-        android:hint="Qual seu nome ?"
+        android:hint="@string/error_mandatory_name"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="24sp" />
@@ -40,7 +40,7 @@
         android:backgroundTint="@color/purple_dark"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
-        android:text="Salvar"
+        android:text="@string/button_save"
         android:textColor="@color/white"
         android:textSize="20sp" />
 

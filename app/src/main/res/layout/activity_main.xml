@@ -23,7 +23,7 @@
         android:layout_alignTop="@+id/view_phrases_menu"
         android:layout_alignBottom="@+id/view_phrases_menu"
         android:layout_marginStart="32dp"
-        android:contentDescription="All content"
+        android:contentDescription="@string/label_phrases_all"
         android:src="@drawable/ic_all"
         app:tint="@color/black" />
 
@@ -34,7 +34,7 @@
         android:layout_alignTop="@+id/view_phrases_menu"
         android:layout_alignBottom="@+id/view_phrases_menu"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Happy"
+        android:contentDescription="@string/label_phrases_motivation"
         android:src="@drawable/ic_happy"
         app:tint="@color/black" />
 
@@ -46,11 +46,12 @@
         android:layout_alignBottom="@+id/view_phrases_menu"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
-        android:contentDescription="Sunny"
+        android:contentDescription="@string/label_phrases_morning"
         android:src="@drawable/ic_sunny"
         app:tint="@color/black" />
 
     <TextView
+        android:text="@string/label_user"
         android:id="@+id/textview_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +67,7 @@
         android:layout_centerInParent="true"
         android:layout_margin="8dp"
         android:gravity="center"
-        android:text="Olá, Kotlin! Olá, Kotlin!Olá, Kotlin! Olá, Kotlin!Olá, Kotlin! "
+        android:text="@string/label_phrase"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -89,7 +90,7 @@
         android:layout_marginBottom="32dp"
         android:textSize="20sp"
         android:backgroundTint="@color/purple"
-        android:text="Nova Frase"
+        android:text="@string/button_new_phrase"
         android:textColor="@color/white"/>
 
 </RelativeLayout>
